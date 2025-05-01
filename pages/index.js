@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div
@@ -11,8 +13,9 @@ export default function Home() {
         rowGap: "16px",
       }}
     >
-      <img
+      <Image
         src="/img/under_construction.png"
+        alt="Representative image for Under Construction website"
         style={{ maxWidth: "128px", width: "100%" }}
       />
       <h2>em construção...</h2>
