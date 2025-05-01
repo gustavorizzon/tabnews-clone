@@ -35,4 +35,6 @@ function getSSLConfig() {
   return process.env.NODE_ENV === "production";
 }
 
-export default { query, getNewClient };
+const database = { query, getNewClient };
+
+export default database;
