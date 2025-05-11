@@ -9,6 +9,7 @@ const createJestConfig = nextJest({ dir: "." });
 
 /** @type {import('jest').Config} */
 const jestConfig = {
+  verbose: true,
   moduleDirectories: ["node_modules", "<rootDir>"],
   testTimeout: 60000,
 };
