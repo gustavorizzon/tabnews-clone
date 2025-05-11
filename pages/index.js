@@ -16,7 +16,8 @@ export default function Home() {
       <Image
         src="/img/under_construction.png"
         alt="Representative image for Under Construction website"
-        style={{ maxWidth: "128px", width: "100%" }}
+        width={128}
+        height={128}
       />
       <h2>em construção...</h2>
     </div>
