@@ -40,7 +40,6 @@ function DatabaseStatus() {
   if (!isLoading && data) {
     databaseInfo = (
       <>
-        <h2>Database</h2>
         <div>Versão: {data.dependencies.database.version}</div>
         <div>
           Conexões ativas: {data.dependencies.database.active_connections}
@@ -52,5 +51,10 @@ function DatabaseStatus() {
     );
   }
 
-  return <div>{databaseInfo}</div>;
+  return (
+    <div>
+      <h2>Database</h2>
+      {databaseInfo}
+    </div>
+  );
 }
