@@ -9,7 +9,7 @@ const getDefaultMigrationRunnerConfig = (dbClient, dryRun = true) => ({
   dir: resolve("infra", "migrations"),
   direction: "up",
   dryRun,
-  verbose: true,
+  log: () => {},
   migrationsTable: "pgmigrations",
 });
 
